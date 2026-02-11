@@ -19,6 +19,7 @@ cd email-spam-detection
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 Download Dataset (SpamAssassin)
 
 Raw data is kept out of git (data/raw/ is ignored).
@@ -29,6 +30,7 @@ curl -L -o easy_ham.tar.bz2 https://spamassassin.apache.org/old/publiccorpus/200
 
 tar -xjf spam_2.tar.bz2
 tar -xjf easy_ham.tar.bz2
+```
 Expected folders:
 
 data/raw/spam_2/
@@ -37,6 +39,7 @@ data/raw/easy_ham/
 
 Train + Evaluate (Notebook)
 jupyter notebook
+```
 
 
 Run:
@@ -57,6 +60,7 @@ Saves the trained pipeline to models/
 
 Run Streamlit App
 streamlit run streamlit_app/app.py
+```
 
 
 The app shows:
@@ -76,6 +80,7 @@ models/threshold.txt
 Example:
 
 echo 0.60 > models/threshold.txt
+```
 
 CI
 
