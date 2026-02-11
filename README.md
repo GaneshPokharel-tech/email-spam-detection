@@ -1,5 +1,8 @@
 # Email Spam Detection (SpamAssassin)
 
+![CI](https://github.com/GaneshPokharel-tech/email-spam-detection/actions/workflows/ci.yml/badge.svg)
+
+
 A simple end-to-end email spam detection project using the SpamAssassin public dataset.
 Baseline model: TF-IDF + Logistic Regression (scikit-learn).
 Includes a Streamlit app for quick testing (text input → prediction + confidence).
