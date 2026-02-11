@@ -19,3 +19,6 @@ models/*.joblib
 
 # Raw dataset (keep out of git)
 data/raw/
+
+# allow deployment model artifact
+!models/spam_pipeline.joblib
