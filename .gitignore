@@ -16,3 +16,6 @@ Thumbs.db
 models/*.pkl
 models/*.joblib
 
+
+# Raw dataset (keep out of git)
+data/raw/
