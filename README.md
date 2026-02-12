@@ -53,3 +53,16 @@ Example:
 
 ## CI
 GitHub Actions runs basic checks on push/PR.
+
+## Time-based (TREC-style) Evaluation (Research Extension)
+
+Instead of random train/val/test split, I also evaluated the model using **chronological (time-based) splits** to simulate real-world deployment (train on past emails, test on future emails).  
+This helps reveal **distribution shift / concept drift** over time and avoids leakage that can happen with random splits.
+
+### Expanding-window results (3 windows)
+- Window 1 (2002-07-23 → 2002-09-04): many false positives (FP=517) when using threshold=0.5  
+- Window 2 (2002-09-04 → 2002-09-26): **0 spam in test**, so spam precision/recall/F1 are not meaningful; FP count is the key metric (FP=150)  
+- Window 3 (2002-09-26 → 2003-07-20): strong performance (TN=934, FP=1, FN=3, TP=22)
+
+**Key takeaway:** performance can change significantly by time period, so time-based evaluation is important for realistic spam detection.
+
