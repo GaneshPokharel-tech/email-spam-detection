@@ -85,3 +85,10 @@ This helps reveal **distribution shift / concept drift** over time and avoids le
 ![](assets/tp_fn_over_time.png)
 
 
+
+## Time-based evaluation (script)
+
+Run expanding-window (3 windows) time-based evaluation:
+
+    python src/time_eval.py
+
