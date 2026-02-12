@@ -66,3 +66,12 @@ This helps reveal **distribution shift / concept drift** over time and avoids le
 
 **Key takeaway:** performance can change significantly by time period, so time-based evaluation is important for realistic spam detection.
 
+
+### Expanding-window confusion matrices (threshold = 0.5)
+
+| Window | Test range (UTC) | TN | FP | FN | TP |
+|---|---|---:|---:|---:|---:|
+| 1 | 2002-07-23 → 2002-09-04 | 42 | 517 | 0 | 402 |
+| 2 | 2002-09-04 → 2002-09-26 | 811 | 150 | 0 | 0 |
+| 3 | 2002-09-26 → 2003-07-20 | 934 | 1 | 3 | 22 |
+
