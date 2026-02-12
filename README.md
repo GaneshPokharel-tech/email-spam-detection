@@ -75,3 +75,13 @@ This helps reveal **distribution shift / concept drift** over time and avoids le
 | 2 | 2002-09-04 → 2002-09-26 | 811 | 150 | 0 | 0 |
 | 3 | 2002-09-26 → 2003-07-20 | 934 | 1 | 3 | 22 |
 
+
+### Time-based plots
+
+**False Positives over time**
+![](assets/fp_over_time.png)
+
+**TP vs FN over time**
+![](assets/tp_fn_over_time.png)
+
+
