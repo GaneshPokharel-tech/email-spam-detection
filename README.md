@@ -1,5 +1,13 @@
 # Email Spam Detection (SpamAssassin)
 
+## Project Summary
+This project builds an email spam detector using the SpamAssassin public corpus.  
+A TF-IDF + Logistic Regression pipeline is trained and evaluated, then deployed as a Streamlit web app.  
+The app uses a configurable probability threshold (`models/threshold.txt`) for spam/ham decisions.  
+CI (GitHub Actions) runs dependency install + import + syntax checks on every push/PR.  
+As a research extension, I also ran time-based (TREC-style) evaluation to test performance on future emails.
+
+
 ![CI](https://github.com/GaneshPokharel-tech/email-spam-detection/actions/workflows/ci.yml/badge.svg)
 
 
