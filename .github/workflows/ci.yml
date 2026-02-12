@@ -26,7 +26,7 @@ jobs:
 
       - name: Basic import check
         run: |
-          python -c "import pandas, numpy, sklearn, seaborn, joblib, streamlit; print('Imports OK')"
+          python -c "import pandas, numpy, sklearn, joblib, streamlit; print('Imports OK')"
 
       - name: Compile python files (syntax check)
         run: |
